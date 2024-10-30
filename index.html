@@ -6,7 +6,7 @@
     <title>Rinterio website assignment-3</title>
 
     <!-- custom stylesheet -->
-     <link rel="stylesheet" href="styles/style.css">git branch -M main
+     <link rel="stylesheet" href="styles/style.css">
 
     <!-- tailwind css daisyUi link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -38,59 +38,54 @@
     </script>
 </head>
 <body>
-    <header>
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16" />
-                  </svg>
+    <header class="bg-gradient-to-r from-[#fff] to-[#e6dcdc] 100%">
+        <!-- navbar -->
+        <div class="py-10 w-[90%] mx-auto">
+            <div class="flex justify-between items-center mb-24">
+                <!-- logo  -->
+                <div class="flex items-center gap-1">
+                    <i class="fa-solid fa-arrow-right bg-[#ABEF5F] p-2 rounded-full -rotate-45"></i>
+                    <a href="#" class="text-blue-950 font-bold text-2xl">Rinterio</a>
                 </div>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                  <li><a>Item 1</a></li>
-                  <li>
-                    <a>Parent</a>
-                    <ul class="p-2">
-                      <li><a>Submenu 1</a></li>
-                      <li><a>Submenu 2</a></li>
-                    </ul>
-                  </li>
-                  <li><a>Item 3</a></li>
-                </ul>
+                <!-- nav-items -->
+                <div class="lg:flex items-center gap-6 hidden">
+                   <a href="home">Home</a>
+                   <a href="home">Services</a>
+                   <a href="home">Portfolio</a>
+                   <a href="home">Blogs</a>
+                   <a href="home">Contact Us</a>
+                </div>
+                <!-- icon+btn -->
+                <div class="lg:flex items-center gap-4 hidden">
+                    <i class="fa-solid fa-magnifying-glass p-3 bg-white rounded-full text-slate-400"></i>
+                    <i class="fa-solid fa-cart-shopping p-3 bg-white rounded-full text-slate-400"></i>
+                    <button class="bg-[#ABEF5F] text-black px-4 py-2 rounded-[2rem]">Book Consult <i class="fa-solid fa-arrow-right bg-black p-2 rounded-full -rotate-45 text-slate-50 ml-2"></i></button>
+                </div>
+    
+                 <!-- menu icons -->
+                <div class="lg:hidden">
+                    <i class="fa-solid fa-bars bg-white p-2 px-3 rounded-full text-slate-500 text-xl"></i>
+                 </div>
+           </div>
+            <!-- hero section -->
+            <div class="items-center flex flex-col justify-center space-y-10 text-center">
+                <div>
+                    <img src="./image/banner.png" alt="">
+                </div>
+                <div class="space-y-6 text-center">
+                    <h1 class="lg:text-6xl text-3xl text-slate-800 font-bold">A barn house of this design has a striking appearance</h1>
+                    <p class="text-[.9rem]">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+                    <button class="bg-[#ABEF5F] text-black px-4 py-2 rounded-[2rem]">View Details<i class="fa-solid fa-arrow-right bg-[#76b82b] p-2 rounded-full -rotate-45 text-black ml-4"></i></button>
+                </div>
+                
               </div>
-              <a class="btn btn-ghost text-xl">daisyUI</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li><a>Item 1</a></li>
-                <li>
-                  <details>
-                    <summary>Parent</summary>
-                    <ul class="p-2">
-                      <li><a>Submenu 1</a></li>
-                      <li><a>Submenu 2</a></li>
-                    </ul>
-                  </details>
-                </li>
-                <li><a>Item 3</a></li>
-              </ul>
-            </div>
-            <div class="navbar-end">
-              <a class="btn">Button</a>
-            </div>
+           </div>
+
+
         </div>
+
+        
+        
     </header>
     <main>
 
